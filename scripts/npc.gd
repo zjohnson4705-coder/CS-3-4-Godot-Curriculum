@@ -5,7 +5,7 @@ class_name npc
 
 @export var health : int = 10
 @export var speed : int = 200
-@export var is_hostile : bool = false
+@export var is_hostile: bool = false
 @export var move_points : Array[Vector2] = []
 @export var move_point : int = 0
 @export var dialogue : Array[String] = []

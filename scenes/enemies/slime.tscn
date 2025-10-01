@@ -1,6 +1,6 @@
 [gd_scene load_steps=11 format=3 uid="uid://c6gaa4kprawy0"]
 
-[ext_resource type="Script" uid="uid://biopq2aedkgwh" path="res://scripts/npc.gd" id="1_4h4y0"]
+[ext_resource type="Script" uid="uid://co5hnowm81a7y" path="res://scripts/enemies/enemy_base.gd" id="1_4h4y0"]
 [ext_resource type="Texture2D" uid="uid://barrcryhoe1ep" path="res://assets/Platformer Slimes v1.3/Ogre Slime Spritesheet.png" id="2_ahq63"]
 [ext_resource type="PackedScene" uid="uid://l7oauc6tswy3" path="res://scenes/enemies/detection_radius.tscn" id="3_b58ev"]
 
@@ -52,7 +52,6 @@ animations = [{
 
 [node name="slime" type="CharacterBody2D"]
 script = ExtResource("1_4h4y0")
-move_points = Array[Vector2]([Vector2(0, 0), Vector2(0, 0)])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)
