@@ -8,8 +8,8 @@ class_name Player
 @export var maxHealth : int = 10
 @export var health : int = maxHealth
 @export var coins : int = 0
-
-
+@onready var slime: Enemy = $"../slime"
+@export var attack_strength: int = -2
 var facing: Vector2 = Vector2.ZERO
 
 
@@ -17,7 +17,7 @@ func _ready():
 	print("Player is ready!")
 	# TODO: Add detailed character info display (Lesson 1)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	handle_movement()
 
 func handle_movement():
@@ -79,7 +79,16 @@ func change_health(_amount):
 
 func die():
 	print("You died!")
+	get_tree().reload_current_scene()
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		get_tree().quit(0)
+	if event.is_action_pressed("ui_select"):
+		attack()
+
+func attack():
+	print("fade being run")
+	if slime != null:
+		if position.distance_to(slime.position)<10:
+			slime.change_health(attack_strength)
