@@ -24,7 +24,7 @@ func _on_detection_radius_body_entered(body: Node2D) -> void:
 func _on_detection_radius_body_exited(body: Node2D) -> void:
 	super._on_detection_radius_body_exited(body)
 	if body.is_in_group("player"):
-		print ("yas")
+		print ("not touching player")
 		is_hostile = false
 
 

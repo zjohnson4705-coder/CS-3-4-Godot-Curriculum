@@ -11,6 +11,7 @@ class_name Player
 @onready var slime: Enemy = $"../slime"
 @export var attack_strength: int = -2
 var facing: Vector2 = Vector2.ZERO
+@export var _ammount: int
 
 
 func _ready():
@@ -58,9 +59,11 @@ func collect_pickup(_type : String, _amount : int):
 	if _type == "coin":
 		coins += _amount
 		print("Coins: " + str(coins))
+		if coins < 0:
+			die()
 	elif _type == "health_potion":
 		change_health(_amount)
-		
+
 
 # TODO: Add character methods here (Lesson 2)
 
@@ -74,6 +77,7 @@ func change_health(_amount):
 		
 	elif health < 1:
 		die()
+		print("died")
 		
 	print("Health: " + str(health))
 
@@ -86,9 +90,11 @@ func _input(event: InputEvent) -> void:
 		get_tree().quit(0)
 	if event.is_action_pressed("ui_select"):
 		attack()
+		coins -= _ammount
+		print("Coins: " + str(coins))
 
 func attack():
-	print("fade being run")
+	#print("fade being run")
 	if slime != null:
 		if position.distance_to(slime.position)<10:
 			slime.change_health(attack_strength)
