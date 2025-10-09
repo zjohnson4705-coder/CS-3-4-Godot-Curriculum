@@ -59,8 +59,6 @@ func collect_pickup(_type : String, _amount : int):
 	if _type == "coin":
 		coins += _amount
 		print("Coins: " + str(coins))
-		if coins < 0:
-			die()
 	elif _type == "health_potion":
 		change_health(_amount)
 
@@ -92,6 +90,10 @@ func _input(event: InputEvent) -> void:
 		attack()
 		coins -= _ammount
 		print("Coins: " + str(coins))
+		if coins < 0:
+			die()
+		elif coins >= 0:
+			pass
 
 func attack():
 	#print("fade being run")

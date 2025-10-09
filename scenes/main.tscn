@@ -24,6 +24,7 @@ script = ExtResource("2_3k9wy")
 environment = SubResource("Environment_jyhfs")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
+visible = false
 color = Color(0.103743605, 0.103743516, 0.103743516, 1)
 
 [node name="Tilemap" type="Node2D" parent="."]
@@ -123,7 +124,7 @@ position = Vector2(-222.5, 15)
 
 [node name="Player" parent="." instance=ExtResource("1_2j8vx")]
 unique_name_in_owner = true
-_ammount = 10
+_ammount = 2
 
 [node name="UI" type="CanvasLayer" parent="."]
 
