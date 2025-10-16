@@ -3,7 +3,7 @@ class_name Player
 
 
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
-
+@onready var label: Label = $Label
 @export var move_speed: float = 200.0
 @export var maxHealth : int = 10
 @export var health : int = maxHealth
@@ -59,6 +59,7 @@ func collect_pickup(_type : String, _amount : int):
 	if _type == "coin":
 		coins += _amount
 		print("Coins: " + str(coins))
+		label. _update_score_display(coins)
 	elif _type == "health_potion":
 		change_health(_amount)
 
