@@ -66,7 +66,7 @@ amount = 5
 position = Vector2(-9.5, 26)
 
 [node name="Door" parent="Tilemap/StuffOnTop" instance=ExtResource("7_tipki")]
-position = Vector2(24, -24)
+position = Vector2(52, -5.5)
 
 [node name="Lever" parent="Tilemap/StuffOnTop" instance=ExtResource("8_85g3d")]
 position = Vector2(-183.5, 105)
@@ -160,3 +160,24 @@ position = Vector2(312, 200)
 
 [node name="Coin7" parent="." instance=ExtResource("5_tbgi4")]
 position = Vector2(376, -6)
+
+[node name="Coin8" parent="." instance=ExtResource("5_tbgi4")]
+position = Vector2(47, -81)
+
+[node name="Coin9" parent="." instance=ExtResource("5_tbgi4")]
+position = Vector2(47, -109)
+
+[node name="Coin10" parent="." instance=ExtResource("5_tbgi4")]
+position = Vector2(46, -143)
+
+[node name="Coin11" parent="." instance=ExtResource("5_tbgi4")]
+position = Vector2(47, -174)
+
+[node name="Coin12" parent="." instance=ExtResource("5_tbgi4")]
+position = Vector2(47, -203)
+
+[node name="Coin13" parent="." instance=ExtResource("5_tbgi4")]
+position = Vector2(46, -239)
+
+[node name="Coin14" parent="." instance=ExtResource("5_tbgi4")]
+position = Vector2(46, -266)

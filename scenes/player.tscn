@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://cqvpxnx2pwqhk"]
+[gd_scene load_steps=45 format=3 uid="uid://cqvpxnx2pwqhk"]
 
 [ext_resource type="Script" uid="uid://dbc6krbwjvop0" path="res://scripts/player.gd" id="1_4x8vn"]
 [ext_resource type="Texture2D" uid="uid://ck3srvsv3au5f" path="res://assets/lpc_male_animations_2025-09-04T20-28-14/standard/combat_idle.png" id="2_tuyoq"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bxia0b8oxxlb8" path="res://assets/lpc_male_animations_2025-09-04T20-28-14/standard/walk.png" id="3_vbpto"]
 [ext_resource type="Texture2D" uid="uid://bwd62n2s4k1j5" path="res://assets/point_light.webp" id="4_dqkch"]
 [ext_resource type="Script" uid="uid://bdpw76u5jlwfr" path="res://scenes/label.gd" id="5_qlg0r"]
+[ext_resource type="Script" uid="uid://ca64quw40immf" path="res://scenes/health_label.gd" id="7_fjrip"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1a2b3"]
 size = Vector2(17, 20)
@@ -311,9 +312,16 @@ autoplay = "idle_forward"
 [node name="PointLight2D" type="PointLight2D" parent="."]
 texture = ExtResource("4_dqkch")
 
-[node name="Label" type="Label" parent="."]
+[node name="Coins" type="Label" parent="."]
 offset_left = 23.0
 offset_top = -87.0
 offset_right = 63.0
 offset_bottom = -64.0
 script = ExtResource("5_qlg0r")
+
+[node name="Health" type="Label" parent="."]
+offset_left = 30.0
+offset_top = -114.0
+offset_right = 73.0
+offset_bottom = -91.0
+script = ExtResource("7_fjrip")
