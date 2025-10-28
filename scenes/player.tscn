@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://cqvpxnx2pwqhk"]
+[gd_scene load_steps=49 format=3 uid="uid://cqvpxnx2pwqhk"]
 
 [ext_resource type="Script" uid="uid://dbc6krbwjvop0" path="res://scripts/player.gd" id="1_4x8vn"]
 [ext_resource type="Texture2D" uid="uid://ck3srvsv3au5f" path="res://assets/lpc_male_animations_2025-09-04T20-28-14/standard/combat_idle.png" id="2_tuyoq"]
@@ -7,6 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://bwd62n2s4k1j5" path="res://assets/point_light.webp" id="4_dqkch"]
 [ext_resource type="Script" uid="uid://bdpw76u5jlwfr" path="res://scenes/label.gd" id="5_qlg0r"]
 [ext_resource type="Script" uid="uid://ca64quw40immf" path="res://scenes/health_label.gd" id="7_fjrip"]
+[ext_resource type="PackedScene" uid="uid://dnen84wt1sty6" path="res://scenes/inventory.tscn" id="8_smehm"]
+[ext_resource type="Script" uid="uid://dt0t0irs4dbvr" path="res://scripts/item.gd" id="9_d2wvv"]
+[ext_resource type="Resource" uid="uid://b3vhche1jv61m" path="res://inventory/coin.tres" id="10_3v2ag"]
+[ext_resource type="Resource" uid="uid://bf2w28eatul20" path="res://inventory/potion.tres" id="11_jej6c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1a2b3"]
 size = Vector2(17, 20)
@@ -325,3 +329,6 @@ offset_top = -114.0
 offset_right = 73.0
 offset_bottom = -91.0
 script = ExtResource("7_fjrip")
+
+[node name="inventory" parent="." instance=ExtResource("8_smehm")]
+my_inventory = Array[ExtResource("9_d2wvv")]([ExtResource("10_3v2ag"), ExtResource("11_jej6c")])

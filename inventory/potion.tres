@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="inventory_item" load_steps=3 format=3 uid="uid://bf2w28eatul20"]
+
+[ext_resource type="Script" uid="uid://dt0t0irs4dbvr" path="res://scripts/item.gd" id="1_gil0t"]
+[ext_resource type="Texture2D" uid="uid://d3iyw62y2x23r" path="res://assets/2D Pixel Dungeon Asset Pack/items and trap_animation/flasks/flasks_4_1.png" id="1_uls24"]
+
+[resource]
+script = ExtResource("1_gil0t")
+name = "potion"
+description = "healing"
+type = "potion"
+cost = 10
+image = ExtResource("1_uls24")
+metadata/_custom_type_script = "uid://dt0t0irs4dbvr"
