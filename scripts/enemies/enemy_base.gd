@@ -1,6 +1,7 @@
 extends CharacterBody2D
 class_name EnemyBase
 
+
 ## ============================================================================
 ## ENEMY BASE - Generic enemy controller (works with all enemy types)
 ## ============================================================================

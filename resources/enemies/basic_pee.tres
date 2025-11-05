@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=3 format=3 uid="uid://d3yxp7k2mqt6n"]
+
+[ext_resource type="Script" uid="uid://bxtjti5hlu2op" path="res://scripts/resources/enemy_resource.gd" id="1_enemy"]
+[ext_resource type="SpriteFrames" uid="uid://cnp8r3naqst6h" path="res://resources/animations/ogre_slime_frames.tres" id="2_frames"]
+
+[resource]
+script = ExtResource("1_enemy")
+enemy_id = "basic_pee"
+enemy_name = "Basic pee"
+animated_frames = ExtResource("2_frames")
+sprite_scale = 2.0
+max_health = 60.0
+contact_damage = 8.0
+move_speed = 80.0
+detection_range = 800.0
