@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="ProjectileWeaponResource" load_steps=4 format=3 uid="uid://hsym4q6q4okx"]
+
+[ext_resource type="Texture2D" uid="uid://cqatq7nlwor0e" path="res://assets/point_arrow.png" id="1_i6feh"]
+[ext_resource type="Resource" uid="uid://bf3jr1g2weu4t" path="res://resources/projectiles/powder.tres" id="2_i6feh"]
+[ext_resource type="Script" uid="uid://c6yex7bm6vt2g" path="res://scripts/resources/projectile_weapon_resource.gd" id="3_oyp3m"]
+
+[resource]
+script = ExtResource("3_oyp3m")
+projectile_config = ExtResource("2_i6feh")
+projectile_count = 15
+spread_angle = 90.0
+item_id = "basic_pistol"
+item_name = "Basic Pistol"
+description = "A simple firearm that shoots basic projectiles. Perfect for starting your survival journey."
+icon = ExtResource("1_i6feh")
+value = 50
+base_damage = 15.0
+fire_rate = 0.35
+accuracy_spread = 5.0
+weapon_sprite = ExtResource("1_i6feh")

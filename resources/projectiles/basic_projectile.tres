@@ -1,17 +1,11 @@
-[gd_resource type="Resource" script_class="ProjectileResource" load_steps=2 format=3 uid="uid://b7qxm2v8pqb3k"]
+[gd_resource type="Resource" script_class="ProjectileResource" load_steps=3 format=3 uid="uid://b7qxm2v8pqb3k"]
 
-[ext_resource type="Script" path="res://scripts/resources/projectile_resource.gd" id="1_projectile"]
-[ext_resource type="Texture2D" uid="uid://dggbbtfuhbglf" path="res://assets/2D Pixel Dungeon Asset Pack/items and trap_animation/arrow/Just_arrow.png" id="2_arrow"]
+[ext_resource type="Script" uid="uid://dmxm5o1dwdxrs" path="res://scripts/resources/projectile_resource.gd" id="1_projectile"]
+[ext_resource type="Texture2D" uid="uid://dg65b4u0smsso" path="res://assets/2D Pixel Dungeon Asset Pack/items and trap_animation/arrow/Just_arrow.png" id="2_arrow"]
 
 [resource]
 script = ExtResource("1_projectile")
 texture = ExtResource("2_arrow")
 scale = Vector2(0.5, 0.5)
-rotate_sprite = true
-speed = 400.0
 lifetime = 2.0
 damage = 15.0
-piercing = false
-max_pierces = 1
-spawn_effect = null
-impact_effect = null

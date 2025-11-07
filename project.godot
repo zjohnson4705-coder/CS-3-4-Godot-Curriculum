@@ -65,4 +65,4 @@ ui_down={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
-environment/defaults/default_clear_color=Color(0.18896914, 0.18896914, 0.18896914, 1)
+environment/defaults/default_clear_color=Color(0.96421295, 0.49958885, 0.5552491, 1)

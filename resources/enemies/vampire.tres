@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=3 format=3 uid="uid://xuhrlt2ta1dw"]
+
+[ext_resource type="SpriteFrames" uid="uid://cxd7c5tt8o38t" path="res://resources/animations/vampire_frames.tres" id="1_buh8n"]
+[ext_resource type="Script" uid="uid://bxtjti5hlu2op" path="res://scripts/resources/enemy_resource.gd" id="2_bm6xc"]
+
+[resource]
+script = ExtResource("2_bm6xc")
+enemy_id = "basic_pee"
+enemy_name = "Basic pee"
+animated_frames = ExtResource("1_buh8n")
+sprite_scale = 10.0
+max_health = 100.0
+contact_damage = 4.0
+move_speed = 30.0
+detection_range = 800.0
+xp_value = 1

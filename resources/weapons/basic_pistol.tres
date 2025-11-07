@@ -7,7 +7,7 @@
 [resource]
 script = ExtResource("1_basic_pistol")
 projectile_config = ExtResource("3_projectile")
-spread_angle = 0.0
+projectile_count = 3
 item_id = "basic_pistol"
 item_name = "Basic Pistol"
 description = "A simple firearm that shoots basic projectiles. Perfect for starting your survival journey."

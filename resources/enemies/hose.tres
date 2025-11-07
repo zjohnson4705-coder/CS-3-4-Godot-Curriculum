@@ -9,6 +9,6 @@ enemy_id = "basic_pee"
 enemy_name = "Basic pee"
 animated_frames = ExtResource("1_jn421")
 sprite_scale = 2.0
-max_health = 1.0
+max_health = 250.0
 contact_damage = 15.0
 detection_range = 800.0
