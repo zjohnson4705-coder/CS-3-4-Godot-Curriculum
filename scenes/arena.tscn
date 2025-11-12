@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cxvnak5nqpr8a"]
+[gd_scene load_steps=19 format=3 uid="uid://cxvnak5nqpr8a"]
 
 [ext_resource type="Script" uid="uid://bnk74kv0ariww" path="res://scripts/game_world.gd" id="1_game_world"]
 [ext_resource type="TileSet" uid="uid://wio17aw1fnr2" path="res://tilesets/dungeon.tres" id="2_tileset"]
@@ -16,6 +16,8 @@
 [ext_resource type="Resource" uid="uid://bcqsck5pec5qt" path="res://resources/enemies/hose.tres" id="10_xsx6r"]
 [ext_resource type="Resource" uid="uid://cq8xm2v8pqb3h" path="res://resources/upgrades/health_upgrade.tres" id="11_ajq0i"]
 [ext_resource type="Resource" uid="uid://xuhrlt2ta1dw" path="res://resources/enemies/vampire.tres" id="11_ixwup"]
+[ext_resource type="Resource" uid="uid://dndpj2tass0gi" path="res://resources/upgrades/speed_upgrade.tres" id="17_ow1aj"]
+[ext_resource type="Resource" uid="uid://c4xoixryeqchq" path="res://resources/upgrades/damage_upgrade.tres" id="18_6joey"]
 
 [node name="Arena" type="Node2D"]
 script = ExtResource("1_game_world")
@@ -39,4 +41,4 @@ available_enemies = Array[ExtResource("7_ixwup")]([ExtResource("8_a43o1"), ExtRe
 [node name="HUD" parent="." instance=ExtResource("5_hud")]
 
 [node name="LevelUpUI" parent="." instance=ExtResource("6_levelup")]
-available_upgrades = Array[ExtResource("10_k1k1x")]([ExtResource("11_ajq0i"), ExtResource("11_ajq0i"), ExtResource("11_ajq0i"), ExtResource("11_ajq0i"), ExtResource("11_ajq0i"), ExtResource("11_ajq0i")])
+available_upgrades = Array[ExtResource("10_k1k1x")]([ExtResource("11_ajq0i"), ExtResource("17_ow1aj"), ExtResource("18_6joey")])

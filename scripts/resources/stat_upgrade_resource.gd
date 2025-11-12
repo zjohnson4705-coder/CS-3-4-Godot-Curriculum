@@ -53,7 +53,7 @@ class_name StatUpgradeResource
 ##        print("Speed increased by ", amount, "! New speed: ", move_speed)
 ##        return true
 ##
-## STEP 3: Add case to match statement (in THIS file, line ~41):
+## STEP 3: Add case to match statement (in THIS file, line ~115):
 ##    match stat_type:
 ##        UpgradeType.HEALTH:
 ##            return player.upgrade_health(amount)
@@ -68,7 +68,7 @@ class_name StatUpgradeResource
 ##    - Set amount and description
 ##
 ## STEP 5: Add to player's available_upgrades:
-##    - Open scenes/player.tscn
+##    - Open LevelUpUI.tscn
 ##    - Find "Available Upgrades" array
 ##    - Add your new upgrade resource
 ##
@@ -77,7 +77,9 @@ class_name StatUpgradeResource
 ## Enum defining available upgrade types
 enum UpgradeType {
 	HEALTH,    ## Increases max health
-		
+	SPEED,
+	DAMAGE
+	
 }
 
 @export_group("Upgrade Identity")
@@ -110,7 +112,10 @@ func apply_to_player(player: Player) -> bool:
 	match stat_type:
 		UpgradeType.HEALTH:
 			return player.upgrade_health(amount)
-		
+		UpgradeType.SPEED:
+			return player.upgrade_speed(amount)
+		UpgradeType.DAMAGE:
+			return player.upgrade_damage(amount)
 		_:
 			push_error("Unknown stat_type: " + str(stat_type))
 			return false

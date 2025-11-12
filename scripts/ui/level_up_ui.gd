@@ -62,6 +62,7 @@ class_name LevelUpUI
 @onready var options_container: VBoxContainer = $Panel/MarginContainer/VBoxContainer/OptionsContainer
 
 @onready var player: Player = %Player
+@onready var hud: HUD = $"../HUD"
 
 
 ## Available upgrade resources
@@ -117,7 +118,7 @@ func _on_upgrade_selected(upgrade) -> void:
 	# Apply the upgrade using the resource's method
 	# upgrade should be a StatUpgradeResource
 	upgrade.apply_to_player(player)
-
+	hud._update_stats_display()
 	# Hide UI and unpause
 	hide()
 	get_tree().paused = false

@@ -12,3 +12,4 @@ sprite_scale = 2.0
 max_health = 250.0
 contact_damage = 15.0
 detection_range = 800.0
+xp_value = 5
